@@ -6,7 +6,7 @@
 
 }
 .navbar{
-    width: 100vw;
+    width: 100%;
     max-width: 1200px;
     display: flex;
     padding: 1em;

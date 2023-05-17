@@ -7,7 +7,7 @@
 }
 .hero{
     display: flex;
-    width: 100vw;
+    width: 100%;
     max-width: 1200px;
     padding: .5em;
     justify-content: space-between;

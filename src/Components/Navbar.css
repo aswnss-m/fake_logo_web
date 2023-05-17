@@ -1,0 +1,36 @@
+.navContainer{
+    display: grid;
+    width: 100%;
+    background-color: var(--secondary-color);
+    place-items: center;
+
+}
+.navbar{
+    width: 100vw;
+    max-width: 1200px;
+    display: flex;
+    padding: 1em;
+    color: white;
+    font-size: .7rem;
+}
+.navLogo{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2em;
+    align-items: center;
+    width: 40%;
+}
+.navLogo img{
+    /* background-color: red; */
+    width: 200px;
+}
+.navLinks{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2em;
+}
+.navContainer a{
+    color:var(--primary-color);
+}

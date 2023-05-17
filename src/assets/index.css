@@ -1,0 +1,32 @@
+*{
+  margin : 0;
+  padding:0;
+  box-sizing: border-box;
+}
+:root{
+  --primary-color:#f9f9f9;
+  --secondary-color : #222222;
+  --accent-color:#B53836;
+}
+html{
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16pt;
+}
+body{
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--primary-color);
+}
+
+.bold{
+  font-weight: 700;
+}
+.medium{
+  font-weight: 500;
+}
+a{
+  text-decoration: none;
+}

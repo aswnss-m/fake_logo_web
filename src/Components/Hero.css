@@ -1,0 +1,37 @@
+.heroContainer{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    overflow-y: hidden ;
+    display: grid;
+    place-items: center;
+}
+.hero{
+    display: flex;
+    width: 100vw;
+    max-width: 1200px;
+    padding: .5em;
+    justify-content: space-between;
+}
+.heroText{
+    font-size: .7rem;
+    white-space: wrap;
+    align-self: center;
+    max-width: 40em;
+}
+.heroImage{
+    position: relative;
+    /* scale: 1.25; */
+    overflow: hidden;
+    height: 250px;
+    transform: translateY(15%);
+}
+
+@media screen and (max-width:800px){
+    .hero{
+        align-items: center;
+        flex-direction: column;
+    }
+    .heroText{
+        text-align: center;
+    }
+}

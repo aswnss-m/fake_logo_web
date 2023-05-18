@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './DragDrop.css';
 
 function DragDrop() {
   const [isDragOver, setIsDragOver] = useState(false);
+  const navigate = useNavigate();
 
   const handleDragEnter = (e) => {
     e.preventDefault();
@@ -24,9 +26,22 @@ function DragDrop() {
 
   const handleFileSelect = (e) => {
     const file = e.target.files[0];
-    // Perform file upload or further processing here
-    console.log('File selected:', file);
+    const formData = new FormData();
+    formData.append('image', file);
+    
+    fetch('http://localhost:5000/postImage', {
+      method: 'POST',
+      body: formData,
+    })
+      .then(response => response.json())
+      .then(data => {
+        navigate('/query')
+      })
+      .catch(error => {
+        console.error('Error uploading image:', error);
+      });
   };
+  
 
   return (
     <div className={`dragContainer ${isDragOver ? 'dragOver' : ''}`}>
@@ -43,6 +58,7 @@ function DragDrop() {
           accept=".png, .jpg, .jpeg"
           onChange={handleFileSelect}
           style={{ display: 'none' }}
+          tabIndex={0}
         />
         {!isDragOver &&(<label htmlFor="fileInput" className="selectFileButton">
           <span className="material-symbols-outlined"></span>

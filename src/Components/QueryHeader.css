@@ -1,0 +1,34 @@
+.queryHeaderContainer{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+    padding: 0 1em;
+    gap: 1em;
+}
+.queryImage{
+    align-items: center;
+    gap: 1em;
+    width: 30%;
+    text-align: center;
+}
+.queryImage img{
+    width: 100%;
+    object-fit: contain;
+}
+.queryContent{
+    text-align: right;
+    /* padding: 1em; */
+}
+@media screen and (max-width:600px){
+ .queryContent{
+    text-align: center;
+ }   
+ .queryHeaderContainer{
+    flex-direction: column;
+ }
+ .queryImage{
+    flex-direction: column;
+ }
+}

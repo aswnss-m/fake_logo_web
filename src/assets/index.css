@@ -3,10 +3,14 @@
   padding:0;
   box-sizing: border-box;
 }
+::-webkit-scrollbar{
+  display: none;
+}
 :root{
   --primary-color:#f9f9f9;
   --secondary-color : #222222;
   --accent-color:#B53836;
+  --off-primary-color:#dfdfdf;
 }
 html{
   width: 100%;

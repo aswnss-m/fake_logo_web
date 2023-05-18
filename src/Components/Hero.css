@@ -9,18 +9,17 @@
     display: flex;
     width: 100%;
     max-width: 1200px;
-    padding: .5em;
     justify-content: space-between;
 }
 .heroText{
     font-size: .7rem;
     white-space: wrap;
+    padding-left: .5em;
     align-self: center;
     max-width: 40em;
 }
 .heroImage{
     position: relative;
-    /* scale: 1.25; */
     overflow: hidden;
     height: 250px;
     transform: translateY(15%);

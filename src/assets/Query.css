@@ -1,0 +1,9 @@
+.queryContainer{
+    width: 100%;
+    display: flex;
+    min-height: 50vh;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: center;
+    gap: 1rem;
+}

@@ -1,0 +1,46 @@
+
+.card{
+    width: 10em;
+}
+
+.cardImage{
+    position: relative;
+}
+.cardImage img{
+    display: block;
+    object-fit: contain;
+    max-width: 100%;
+    min-width: 100px;
+    position: relative;
+    padding:  .25em .25em;
+    /* top: 1em; */
+}
+.cardImageName{
+    bottom:.5rem;
+    text-align: center;
+}
+.cardSimilarity{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+.loadingBar{
+    position: relative;
+    height: 1em;
+    width: var(--width-value);
+    background-color: var(--accent-color);
+    align-self: center;
+    border-radius: inherit;
+}
+.loadingBar::after {
+    content: attr(number-value);
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-100%,-50%);
+  font-size: smaller;
+}
+  

@@ -15,14 +15,16 @@
 }
 .navLogo{
     display: flex;
-    justify-content: flex-start;
     gap: 2em;
     align-items: center;
+    /* justify-content: flex-start; */
     width: 40%;
 }
+
 .navLogo img{
-    /* background-color: red; */
     width: 200px;
+    display: block;
+    align-items: center;
 }
 .navLinks{
     display: flex;

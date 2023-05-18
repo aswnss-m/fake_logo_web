@@ -1,0 +1,19 @@
+.footerContainer{
+    width: 100%;
+    background-color: var(--off-primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer{
+    width: 100%;
+    line-height: 1.25rem;
+    max-width: 1200px;
+    display: flex;
+    font-size: .7rem;
+    justify-content: space-between;
+}
+.footer a{
+    text-decoration: none;
+    color: var(--accent-color);
+}

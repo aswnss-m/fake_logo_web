@@ -11,6 +11,7 @@ function Query() {
   // Generate Card components based on the result object
   const cards = Object.values(result).map((item, index) => (
     <Card
+    imageSrc = {`%PUBLIC_URL%/Logos/${item.name}.png`}
       key={index}
       name={item.name}
       value={Math.round(item.value * 100)} // Adjusted value to *100 and rounded to an integer

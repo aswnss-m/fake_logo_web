@@ -14,7 +14,7 @@ dist-ssr
 LLD_0
 *.npy
 *.csv
-
+*.png
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

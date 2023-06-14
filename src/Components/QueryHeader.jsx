@@ -23,7 +23,6 @@ function QueryHeader() {
     <div className='queryHeaderContainer'>
       <div className="queryImage">
         <img src={imageUrl} alt="queryimage" />
-        <p>Name</p>
       </div>
       <div className="queryContent">
         <p className="bold">100% matching logo found</p>

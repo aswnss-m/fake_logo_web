@@ -29,8 +29,8 @@ path = os.getcwd()
 # get the path of the numpy file
 def search(image):
     try:
-        df = pd.read_csv("./src/combined_annotations_0.csv")
-        feature_vectors = np.load("./src/combined_features_0.npy")
+        df = pd.read_csv("./src/combined_annotations.csv")
+        feature_vectors = np.load("./src/combined_features.npy")
         # Get the feature vector of the image
         feature_vector = get_feature_vector(image)
 

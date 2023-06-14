@@ -66,8 +66,14 @@ def getImage():
         # Convert float32 to float
         converted_data = [(name, float(value)) for name, value in files]
 
-        # Convert the list of tuples to a dictionary
-        dictionary = dict(converted_data)
+        # Create a dictionary to store the results
+        dictionary = {}
+        for i in range(len(converted_data)):
+            dictionary[i] = {
+                'name': converted_data[i][0],
+                'value': converted_data[i][1]
+            }
+
 
         # Convert the dictionary to JSON
         json_data = json.dumps(dictionary)

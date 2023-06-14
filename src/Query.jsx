@@ -1,4 +1,3 @@
-// Query.js
 import React from 'react';
 import Card from './Components/Card';
 import "./assets/Query.css";
@@ -10,11 +9,11 @@ function Query() {
   const { file_id, message, result } = resultData;
 
   // Generate Card components based on the result object
-  const cards = Object.entries(result).map(([filename, score]) => (
+  const cards = Object.values(result).map((item, index) => (
     <Card
-      key={file_id}
-      name={filename}
-      value={score}
+      key={index}
+      name={item.name}
+      value={Math.round(item.value * 100)} // Adjusted value to *100 and rounded to an integer
     />
   ));
 

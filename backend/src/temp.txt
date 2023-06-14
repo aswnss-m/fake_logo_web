@@ -1,0 +1,40 @@
+ Volume in drive C is Acer
+ Volume Serial Number is E241-0E81
+
+ Directory of C:\Users\ACER\Documents\GitHub\fake-logo-web\backend\src
+
+13-06-2023  09:42 PM    <DIR>          .
+07-06-2023  02:22 PM    <DIR>          ..
+07-05-2023  12:23 AM           451,230 annotated_feature_vectors_0.csv
+07-05-2023  01:30 AM           459,272 annotated_feature_vectors_1.csv
+07-05-2023  01:58 PM           461,216 annotated_feature_vectors_10.csv
+07-05-2023  02:56 PM           452,291 annotated_feature_vectors_11.csv
+06-05-2023  02:44 PM           131,503 annotated_feature_vectors_12.csv
+07-05-2023  02:40 AM           466,558 annotated_feature_vectors_2.csv
+07-05-2023  03:52 AM           454,873 annotated_feature_vectors_3.csv
+07-05-2023  05:05 AM           461,761 annotated_feature_vectors_4.csv
+07-05-2023  06:54 AM           450,871 annotated_feature_vectors_5.csv
+07-05-2023  11:03 AM           456,716 annotated_feature_vectors_6.csv
+07-05-2023  12:55 PM           457,583 annotated_feature_vectors_7.csv
+07-05-2023  11:04 AM           459,029 annotated_feature_vectors_8.csv
+07-05-2023  12:32 PM           459,553 annotated_feature_vectors_9.csv
+13-06-2023  09:42 PM               954 combine.ipynb
+08-06-2023  12:19 AM    <DIR>          data
+07-05-2023  12:23 AM     1,003,520,128 feature_vectors_0.npy
+07-05-2023  01:30 AM     1,003,520,128 feature_vectors_1.npy
+07-05-2023  01:57 PM     1,003,520,128 feature_vectors_10.npy
+07-05-2023  02:56 PM     1,003,520,128 feature_vectors_11.npy
+06-05-2023  02:44 PM       293,027,968 feature_vectors_12.npy
+07-05-2023  02:40 AM     1,003,520,128 feature_vectors_2.npy
+07-05-2023  03:52 AM     1,003,520,128 feature_vectors_3.npy
+07-05-2023  05:05 AM     1,003,520,128 feature_vectors_4.npy
+07-05-2023  06:54 AM     1,003,520,128 feature_vectors_5.npy
+07-05-2023  11:03 AM     1,003,520,128 feature_vectors_6.npy
+07-05-2023  12:55 PM     1,003,520,128 feature_vectors_7.npy
+07-05-2023  11:04 AM     1,003,520,128 feature_vectors_8.npy
+07-05-2023  12:32 PM     1,003,520,128 feature_vectors_9.npy
+08-06-2023  12:29 AM             2,095 RIS.py
+13-06-2023  09:42 PM                 0 temp.txt
+08-06-2023  12:30 AM    <DIR>          __pycache__
+              29 File(s) 12,340,895,009 bytes
+               4 Dir(s)  160,505,622,528 bytes free

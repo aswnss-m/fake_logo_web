@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './DragDrop.css';
 
-function DragDrop() {
+function DragDrop({ handleFileSelect }) {
   const [isDragOver, setIsDragOver] = useState(false);
   const navigate = useNavigate();
 
@@ -20,33 +20,19 @@ function DragDrop() {
     e.preventDefault();
     setIsDragOver(false);
     const file = e.dataTransfer.files[0];
-    // Perform file upload or further processing here
+    handleFileSelect(file);
     console.log('File dropped:', file);
   };
 
-  const handleFileSelect = (e) => {
+  const handleInputFileSelect = (e) => {
     const file = e.target.files[0];
-    const formData = new FormData();
-    formData.append('image', file);
-    
-    fetch('http://localhost:5000/postImage', {
-      method: 'POST',
-      body: formData,
-    })
-      .then(response => response.json())
-      .then(data => {
-        navigate('/query')
-      })
-      .catch(error => {
-        console.error('Error uploading image:', error);
-      });
+    handleFileSelect(file);
   };
-  
 
   return (
     <div className={`dragContainer ${isDragOver ? 'dragOver' : ''}`}>
       <div
-        className= {'drag'}
+        className="drag"
         onDragEnter={handleDragEnter}
         onDragOver={handleDragEnter}
         onDragLeave={handleDragLeave}
@@ -56,19 +42,17 @@ function DragDrop() {
           type="file"
           id="fileInput"
           accept=".png, .jpg, .jpeg"
-          onChange={handleFileSelect}
+          onChange={handleInputFileSelect}
           style={{ display: 'none' }}
           tabIndex={0}
         />
-        {!isDragOver &&(<label htmlFor="fileInput" className="selectFileButton">
-          <span className="material-symbols-outlined"></span>
-          Select File
-        </label>)}
-        {isDragOver && (
-          <span className="dropFileHere">
-            Drop the file here
-          </span>
+        {!isDragOver && (
+          <label htmlFor="fileInput" className="selectFileButton">
+            <span className="material-symbols-outlined"></span>
+            Select File
+          </label>
         )}
+        {isDragOver && <span className="dropFileHere">Drop the file here</span>}
       </div>
     </div>
   );

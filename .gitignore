@@ -11,6 +11,9 @@ node_modules
 dist
 dist-ssr
 *.local
+LLD_0
+*.npy
+*.csv
 
 # Editor directories and files
 .vscode/*

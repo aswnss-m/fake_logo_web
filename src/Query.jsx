@@ -19,12 +19,12 @@ function Query() {
   ));
 
   return (
-    <>
+    <div className='queryContainerBox'>
       <QueryHeader />
       <div className="queryContainer">
         {cards}
       </div>
-    </>
+    </div>
   );
 }
 

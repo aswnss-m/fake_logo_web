@@ -7,8 +7,10 @@ function Hero() {
     <div className='heroContainer'>
       <div className="hero">
         <span className="heroText">
-            <h1>1.5 Lakh Logos</h1>
-            <p>With our vast dataset of registered logos you can identify weather the logo is genuine or not, stay away from fake companies trying to sell to fake stuffs.</p>
+            <h1>30k Logos</h1>
+            <p>
+            By using our website, you can easily check for matching logos against our extensive database of registered logos
+            </p>
         </span>
         <span className="heroImage">
             <img src={logo} alt="" />
